@@ -25,7 +25,7 @@ Once you have the project downloaded, unzip the file e.g. to your home directory
 
 The project folder has a few files and folders, many of them related to dependency and project configuration. In this tutorial, we are only interested in our UI code in `src/main/java/com/vaadin/example/MainView.java`
 
-Build the project and run the application on an embedded Jetty server. In the project root folder, run `mvnw` script.
+In the project root folder, run `mvnw` script. The script compiles the project and runs the application on an embedded Jetty server.
 
 Navigate to `http://localhost:8080[localhost:8080, rel="nofollow"]`, and you should see a basic Vaadin application with a button.
 
@@ -85,7 +85,7 @@ public class MainView extends VerticalLayout {
 <4> In the listener for the button click, create a checkbox with the value from the `taskField` as its label.
 <5> Call `add` on the VerticalLayout to define how the components should be displayed. Notice that `taskField` and `addButton` are in a `HorizontalLayout`, which puts them next to each other.
 
-If you still have your server running, kill the process and rerun the `mvwn` script.
+If you still have your server running, kill the process and rerun the `mvnw` script.
 
 Navigate to `http://localhost:8080[localhost:8080, rel="nofollow"]` and you should see the following:
 
